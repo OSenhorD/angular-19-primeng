@@ -1,10 +1,16 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
+import { ButtonModule } from 'primeng/button';
+
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
   styleUrl: './app.component.css',
-  template: ` <router-outlet /> `,
+  templateUrl: `./app.component.html`,
+  imports: [RouterOutlet, ButtonModule],
 })
-export class AppComponent {}
+export class AppComponent {
+  protected toggleTheme = (): void => {
+    document.documentElement.classList.toggle('dark');
+  };
+}
