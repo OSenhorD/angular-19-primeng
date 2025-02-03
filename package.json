@@ -4,6 +4,9 @@
   "private": true,
   "author": "David Marques",
   "description": "Aplicação de exemplo",
+  "engines": {
+    "node": "22.13.1"
+  },
   "packageManager": "yarn@1.22.22",
   "scripts": {
     "start": "ng serve",
